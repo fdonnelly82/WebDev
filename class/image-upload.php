@@ -27,5 +27,4 @@ if (isset($_POST['submit'])) {
     echo "Image has been uploaded, you will be return to your account page in 3 seconds....";
     header ( "Refresh:3; url=author-index.php", true, 303);
 }
-
 ?>
