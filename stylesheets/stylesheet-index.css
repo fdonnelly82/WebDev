@@ -1,0 +1,488 @@
+/*
+	Light Green:	#4FE174
+	Dark Grey: 		#404040
+	Light Grey:		#D9D9D9
+	Dark Violet:		#6045E1
+	Light Violet:	#A89BE8
+	Light Pink: 		#E142E1
+	Light Blue:		#4D9CC3
+	White: 			#ffffff
+*/
+
+@font-face {
+    font-family: 'robotoRegular';
+    src: url('../fonts/Roboto-Regular-webfont.eot');
+    src: url('../fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Regular-webfont.woff') format('woff'),
+         url('../fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotoLight';
+    src: url('../fonts/Roboto-Light-webfont.eot');
+    src: url('../fonts/Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Light-webfont.woff') format('woff'),
+         url('../fonts/Roboto-Light-webfont.ttf') format('truetype'),
+         url('../fonts/Roboto-Light-webfont.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'robotoMedium';
+    src: url('../fonts/Roboto-Medium-webfont.eot');
+    src: url('../fonts/Roboto-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Medium-webfont.woff') format('woff'),
+         url('../fonts/Roboto-Medium-webfont.ttf') format('truetype'),
+         url('../fonts/Roboto-Medium-webfont.svg#robotomedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+::selection {
+			background: #E142E1; 
+}
+
+html{
+			height: 100%;
+			width: 100%;
+}
+
+body{
+			background: url("../images/space.png") no-repeat top center fixed;
+			background-position: 50% 60%;
+			background-color: white; 
+			background-size: cover;
+			margin: 0;
+			padding: 0;
+			height: 70%;
+			width: 100%;
+}
+
+.header-image{
+			height: 100%;
+			width: 100%;
+			padding: 0;
+			z-index: 1;
+}
+
+.comment{
+		width:auto;
+		padding:15px;
+		margin: 0 auto;
+		margin-left: auto;
+		margin-right: auto;
+		text-align:left;
+		display: block; 
+		padding-left:30px;
+		color:#919191;
+	}
+
+.container {
+			width: 100%;
+			height: auto;
+			background: white;
+			margin: 0;
+			padding: 0;
+			position:relative;
+}
+
+
+
+.content {
+			padding-left:10%;
+			width: 70%;
+			height: auto;
+			text-align:left;
+			background: white;
+			font-family:robotoRegular;
+			font-size:1.1em;
+			color:black;
+			display:block;
+			padding-bottom:1%;
+}
+
+.content:after {
+			content:" ";
+			display:block;
+			clear:both
+
+}
+
+.xplor{
+			width: 150px;
+			margin: 0 auto;
+			position: absolute;
+			float:left;
+			left:20px;
+			top: 30%;
+			
+
+}
+
+.colour-split{
+			height: 5px;
+			width: 100%;
+			z-index:100;
+			background: #4D9CC3;
+
+
+}
+
+.tags{
+
+		float:right;
+		right:0;
+		display:block;
+		position:relative;
+		background:#FAFAFA;
+		height:600px;
+		width: 20%;
+
+}
+.end-article{
+
+			padding:30px;
+			margin:0 auto;
+
+
+}
+
+.text-round { 
+			border-radius: 46px; 
+			-moz-border-radius: 46px; 
+			-webkit-border-radius: 46px;
+			height:30px; 
+			width: 180px;
+			border: 1px solid #D9D9D9;
+			outline-width: 0;
+			text-align:center;
+			font-family: robotoRegular;
+			font-size: 14px;
+			letter-spacing: 0;
+			font-weight: 400;
+			font-style: normal;
+			color:#404040;
+}	
+
+.search-round { 
+			border-radius: 46px; 
+			-moz-border-radius: 46px; 
+			-webkit-border-radius: 46px;
+			background-color:transparent;
+			height:30px; 
+			width: 200px;
+			border: 1px solid #4D9CC3;
+			outline-width: 0;
+			text-align:center;
+			font-family: robotoRegular;
+			font-size: 14px;
+			letter-spacing: 0;
+			font-weight: 400;
+			font-style: normal;
+			color:#ffffff;
+}	
+
+.text-straight { 
+	
+			width: 220px;
+			border: 1px solid #D9D9D9;
+			outline-width: 0;
+			text-align:center;
+			font-family: robotoRegular;
+			font-size: 14px;
+			letter-spacing: 0;
+			font-weight: 400;
+			font-style: normal;
+			height:30px;
+			color:#404040;
+			display:block;
+			padding: 10px;
+}
+
+.text-straight-post{
+		width:60%;
+		height:200px;
+		
+		border: 1px solid #D9D9D9;
+		text-align:left;
+		display: block; 
+	
+		color:#919191;
+	
+
+}
+
+.rating-block{
+			float:left;
+			position:absolute;
+			padding-top:10px;
+			width: 50px;
+			height: 50px;
+			display:inline-block;
+			
+
+}
+
+
+.rating{
+	    text-align:center;
+		font-weight: 400;
+		font-style: normal;
+		color: #E31B76;
+		font-size: 30px;	
+
+
+}
+.edit-data-admin{
+		float:right;
+
+
+}
+
+.edit-data{
+		float:left;
+		padding-left:10px;
+
+}
+
+.button-round { 
+			border-radius: 46px; 
+			-moz-border-radius: 46px; 
+			-webkit-border-radius: 46px;
+			height:30px; 
+			width: 80px;
+			background-color:transparent;
+			border: 1px solid #D9D9D9;
+			outline-width: 0;
+			text-align:center;
+			font-family: robotoRegular;
+			font-size: 14px;
+			letter-spacing: 0;
+			font-weight: 400;
+			font-style: normal;
+			color:#404040;
+}	
+
+.add-comment{
+			padding:15px;
+}
+
+.button-comment-round { 
+			border-radius: 46px; 
+			-moz-border-radius: 46px; 
+			-webkit-border-radius: 46px;
+			height:30px; 
+			width: 120px;
+			background-color:transparent;
+			border: 2px solid #D9D9D9;
+			outline-width: 0;
+			text-align:center;
+			font-family: robotoRegular;
+			font-size: 14px;
+			letter-spacing: 0;
+			font-weight: 400;
+			font-style: normal;
+			color:#404040;
+}	
+
+.button-register-round { 
+			border-radius: 46px; 
+			-moz-border-radius: 46px; 
+			-webkit-border-radius: 46px;
+			height:30px; 
+			width: 80px;
+			background-color:transparent;
+			border: 1px solid #E31B76;
+			outline-width: 0;
+			text-align:center;
+			font-family: robotoRegular;
+			font-size: 14px;
+			letter-spacing: 0;
+			font-weight: 400;
+			font-style: normal;
+			color:#404040;
+}	
+
+.button-register-round-wide { 
+			border-radius: 46px; 
+			-moz-border-radius: 46px; 
+			-webkit-border-radius: 46px;
+			height:30px; 
+			width: 150px;
+			background-color:transparent;
+			border: 1px solid #E31B76;
+			outline-width: 0;
+			text-align:center;
+			font-family: robotoRegular;
+			font-size: 14px;
+			letter-spacing: 0;
+			font-weight: 400;
+			font-style: normal;
+			color:#404040;
+}	
+
+
+.center-round{
+			margin:0 auto;
+			text-align: center;
+}
+
+.header{
+			font-family: robotoRegular;
+			background-color: #FFFFFF;
+			max-width: 100%;
+			height: 65px;
+			position:fixed;
+			margin: 0 auto;
+			z-index: 100;
+			left:0;
+			right:0;
+			top:0;
+			transition: all ease 500ms;
+			 border: 1px solid #D9D9D9;
+
+}
+
+
+.login{
+			float:right;
+			margin-top:18px;
+			width: auto;
+			height:36px;
+			
+}
+
+.login form{
+			margin-right:10px;
+}
+
+
+
+input[type="submit"]:hover{
+			color: #dfdfdf;
+}
+
+input[type="button"]:hover{
+			color: #dfdfdf;
+}
+
+
+
+h1{
+			text-align:center;
+
+			color:white;
+			font-size: 44px; 
+			font-family: robotoMedium;
+			padding-top:8%; 
+			line-height: 48px;
+			-webkit-font-smoothing: antialiased;
+			-webkit-margin-before: 0.67em;
+			-webkit-margin-after: 0.67em;
+			-webkit-margin-start: 0px;
+			-webkit-margin-end: 0px;
+}
+
+h2{
+			text-align:center;
+			color:white;
+			margin: 0 auto;
+			width:500px;
+			font-size: 24px; 
+			font-family: robotoLight;
+			font-weight:300;
+			font-style:normal;
+}
+
+.date{
+			text-align:center;
+			color: #D9D9D9;
+			font-size: 15px; 
+			font-family: robotoMedium;
+			letter-spacing:2px;
+			font-weight:400;
+			font-style:normal;
+
+}
+
+.author{
+			text-align:center;
+			color: #404040;
+			padding-top:5px;
+			font-size: 14px; 
+			font-family: robotoMedium;
+			letter-spacing:1px;
+			font-weight:400;
+			font-style:normal;
+
+}
+
+
+h3{
+			text-align:center;
+			color:#F8F8F8;
+			font-size: 18px; 
+			font-family: robotoMedium;
+			letter-spacing:2px;
+			font-weight:300;
+			font-style:normal;
+}
+
+h4{
+
+			text-align:center;
+			color: #4D9CC3 ;
+			font-size: 24px; 
+			font-family: robotoMedium;
+			letter-spacing:3px;
+			font-weight:400;
+			font-style:normal;
+}
+
+h5{
+
+			text-align:left;
+			color: #4D9CC3 ;
+			font-size: 24px; 
+			font-family: robotoMedium;
+			letter-spacing:3px;
+			font-weight:400;
+			font-style:normal;
+}
+
+textarea{
+		  resize: none;
+		  border: 2px solid #D9D9D9;
+		  outline-width: 0;
+		  padding: 15px;
+		  padding-bottom:-10px;
+		  width:60%;
+		  height:60px;
+		  font-size: 15px; 
+			font-family: robotoMedium;
+}
+
+
+
+
+.username{
+
+			font-weight: normal;
+			font-size: 1em;
+			text-decoration: underline;
+			color: #E142E1;
+			
+			padding-top: 20px;
+
+
+}
+
+		
